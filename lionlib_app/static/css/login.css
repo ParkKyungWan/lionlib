@@ -1,0 +1,62 @@
+/* login & register 공통 */
+
+.login-box {
+    background-color: rgba( 255, 242, 234, 0.35 );
+    display: flex;
+    flex-direction: column;
+
+    width: 600px;
+    height: 827px;
+    
+
+    margin: 52px auto;
+    
+    
+    background: rgba(250, 242, 234, 0.35);
+    border: 1px solid #CBBABB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
+
+.login-box h2{
+    color: #BA8889;
+    font-size: 42px;
+    margin: 90px 0 0 50px;
+}
+.login-box h3{
+    font-size: 21px;
+    font-family: maruburiR;
+
+}
+
+.login-box-title{
+    flex: 2;
+}
+.login-box-content{
+    flex: 5;
+    background: rgba(250, 242, 234, 0.7);
+    border-radius: 0px 0px 16px 16px;
+}
+.login-btn{
+    width: 130px;
+    height: 130px;
+    margin: 30px 0 0 390px;
+}
+
+.form-box {
+    margin: 95px auto auto 53px;
+}
+.form-box .input{
+    appearance: none;
+    background: #DDC8BD;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    width: 263px;
+    height: 52px;
+}
+.form-box .btn{
+    background-image: url('../images/Arrow2.png');
+	background-position: center;
+	background-repeat: no-repeat;
+    background-position: center;
+}

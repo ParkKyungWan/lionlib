@@ -1,0 +1,25 @@
+{% extends 'main_base.html' %}
+{% load static %}
+
+{% block title %}
+    <h1 class="titleText more"> 도서 제목 </h1>
+    <h2 class="subtitleText">yyyy.mm.dd ~ yyyy.mm.dd</h2>
+{% endblock %}
+
+
+{% block main %}
+    <div class="content-box-content-body">
+        <div class="writing-box">
+            <div class="book" style="background-image: url('{% static 'images/sample_book.png' %}');"></div>
+            <textarea readonly class="writing-area scroll-design" >멍게는 엄밀히 말해(어쨌든 오늘날 분류학자들에 따르면) 척추동물은 아니지만, 척삭이라는 척추와 비슷한 구조물을 가장 먼저 선구적으로 갖춘 생물 중 하나다.
+            </textarea>
+        </div>
+    </div>
+    <div class="content-box-content-footer">
+        <div style="margin-right: auto;"></div>
+        <div class="btn-group">
+            <div class="btn btn-left">수정하기</div>
+            <div class="btn btn-right" onclick="history.back()">뒤로가기</div>
+        </div>
+    </div>
+{% endblock %}

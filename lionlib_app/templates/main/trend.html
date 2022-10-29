@@ -1,0 +1,20 @@
+{% extends 'main_base.html' %}
+
+{% block title %}
+    <h1 class="titleText"> 실시간 인기 도서 </h1>
+{% endblock %}
+
+
+{% block main %}
+    <div class="content-box-content-body">
+        <div class="five-books">
+                {% for i in "x"|rjust:"5" %}
+                    <div class="book" id="{{ forloop.counter }}" onclick="location.href='/show'"></div>
+                {% endfor %}
+        </div>
+    </div>
+    <div class="content-box-content-footer">
+        <div class="btn" style="margin-right: auto;" onclick="location.href= '{% url "all" %}'">전체보기</div>
+        {% include 'button/three-btn-group.html' %}
+    </div>
+{% endblock %}

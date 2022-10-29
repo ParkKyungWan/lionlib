@@ -1,0 +1,86 @@
+@font-face {
+    font-family: maruburiB;
+    src: url('../fonts/MaruBuri-Bold.ttf');
+}
+
+@font-face {
+    font-family: maruburiR;
+    src: url('../fonts/MaruBuri-Regular.ttf');
+}
+
+@font-face {
+    font-family: maruburiL;
+    src: url('../fonts/MaruBuri-Light.ttf');
+}
+
+body {
+    background-image: url('../images/background.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+html, body, h1, h2, h3 ,h4 {
+    font-family: maruburiB;
+}
+
+p, a, form, input {
+    font-size: maruburiR;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* containers */
+
+.auto-position {
+    margin-top: 153px;
+    text-align: center;
+}
+.container-fluid {
+    margin: 15px;
+    width: 100%;
+}
+
+
+/* texts */
+
+.title {
+    font-size: 64px;
+    color: rgba( 0, 0, 0, 0.7 );
+}
+
+/* buttons */
+
+.btn:hover {
+    cursor: pointer;
+}
+.btn:active {
+    opacity: 70%;
+}
+
+.normal-btn {
+    background: #BA8889;
+    border-radius: 50%;
+    border: 0px;
+    box-shadow: 0px 4p 4px rgba(0, 0, 0, 0.25);
+}
+
+/* 기본 css 제거 */
+input { 
+    border: none;
+    padding: 2%;
+}
+input:focus{
+    outline: none;
+}
+

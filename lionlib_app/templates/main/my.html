@@ -1,0 +1,36 @@
+{% extends 'main_base.html' %}
+
+{% block title %}
+    <h1 class="titleText"> 내가 작성한 도서 </h1>
+{% endblock %}
+
+
+{% block main %}
+    <div class="content-box-content-body">
+        <div class="scroll-box scroll-design">
+            {% for j in "x"|rjust:"5" %}
+            <div class="five-books">
+                {% for i in "x"|rjust:"5" %}
+                    <div class="book" id="{{ forloop.counter }}" onclick="location.href='/show'"></div>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="content-box-content-footer">
+        <div class="btn btn-sort" onclick="changeBtnType()" style="margin-right: auto;">별 표시만</div>
+        <script>
+            const changeBtnType = () => { 
+                let now = document.getElementsByClassName('btn-sort')[0];
+                if( now.innerHTML == "별 표시만"){
+                    now.innerHTML = "최신순";
+                    now.style.backgroundColor = "#BA8889"
+                }else{
+                    now.innerHTML = "별 표시만";
+                    now.style.backgroundColor = "rgba(221, 200, 189, 1)"
+                }
+             }
+        </script>
+        {% include 'button/three-btn-group.html' %}
+    </div>
+{% endblock %}

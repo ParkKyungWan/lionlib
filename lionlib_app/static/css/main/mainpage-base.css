@@ -1,0 +1,262 @@
+
+.content-box {
+    background-color: rgba( 255, 242, 234, 0.35 );
+    display: flex;
+    flex-direction: column;
+
+    width: 1238px;
+    height: 919px;
+
+    margin: 52px auto;
+    
+    background: rgba(250, 242, 234, 0.35);
+    border: 1px solid #CBBABB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
+
+.content-box-title{
+    flex: 3;
+    text-align: center;
+}
+.titleText{
+    font-size: 41;
+    margin-top: 65px;
+    color: #BA8889;
+
+}.subtitleText{
+    font-size: 26;
+    margin: 0;
+    color: #DBA69E;
+    margin-bottom: 50px;
+
+}
+.content-box-content{
+    flex: 9;
+    background: rgba(250, 242, 234, 0.7);
+    border-radius: 0px 0px 16px 16px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.content-box-content-body{
+    flex: 9;
+}
+.content-box-content-footer{
+    flex: 1.5;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* buttons */
+.btn {
+    user-select: none;
+    width: 110px;
+    height: 32px;
+    border-radius: 16px;
+    background: #BA8889;
+    opacity: 0.8;
+    padding-top: 4px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    text-align: center;
+    font-family:'maruburiL';
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.85);
+    margin: 10px 26px 10px 26px;
+}
+
+/* three-group-buttons */
+.btn-group{
+    display: flex;
+    flex-direction: row;
+    width: 330px;
+    margin-bottom: 25px;
+}
+.btn-left {
+    flex: 1;
+    border-radius: 16px 0 0 16px;
+    margin-right: 0;
+}
+.btn-center {
+    flex: 1;
+    background: #DBA69E;
+    border-radius: 0px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.btn-right {
+    flex: 1;
+    background: #DDC8BD;
+    border-radius: 0 16px 16px 0;
+    margin-left: 0;
+}
+
+/* views for books*/
+
+.five-books{
+
+    margin: 103px 118px;
+    display: flex;
+    flex-direction: row;
+
+    max-width: 1002px;
+    max-height: 262px;
+
+    gap: 28px;
+}
+
+.book {
+    width: 178px;
+    height: 262px;
+    background-color: rgba(180, 182, 188, 1);
+    cursor: pointer;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 15px;
+    color: #FAF2EA;
+    box-sizing: border-box;
+    font-family: 'maruburiL';
+}
+.book:active{
+    opacity: 70%;
+}
+
+/* 부가 기능 */
+.more {
+    margin-bottom: 0px;
+}
+
+/* 'my' page */
+
+.only-star {
+    color: rgba(0, 0, 0, 0.55);
+    font-size: 18px;
+    float: right;
+    margin-right:  130px;
+}
+
+.checkbox{
+    background: rgba(186, 136, 137, 0.35);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 3px;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 2.5px;
+    margin: 2px ;
+}
+
+/* scroll box */
+.scroll-box{
+    overflow-y: scroll;
+
+    max-height: 354px;
+    margin: 103px 118px;
+    width: 1002px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    box-sizing: content-box;
+    padding-right: 25px;
+}
+.scroll-box .five-books{
+    margin: 0;
+}
+
+/* scroll box - scroll bar design */
+.scroll-design::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .scroll-design::-webkit-scrollbar-track {
+    background-color: #CBBABB;
+    border-radius: 15px;
+  }
+   
+  .scroll-design::-webkit-scrollbar-thumb {
+    background: #BA8889;
+    border-radius: 15px;
+  }
+  
+  
+  
+  /* 'all' page */
+
+  .btn-sort{
+    background: #DDC8BD;
+  }
+
+  /* 'show' page */
+
+  .writing-box {
+    margin: 113px 118px;
+    display: flex;
+    flex-direction: row;
+    gap: 29px;
+    box-sizing: border-box;
+  }
+
+  .writing-area{
+    width: 829px;
+    height: 300px;
+    background-color: #DDC8BD;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding: 10px;
+    resize: none;
+    font-family: 'MaruburiR';
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .writing-area:focus{
+    outline: 1px solid #BA8889;
+  }
+  .writing-area::-webkit-scrollbar-track{
+    background-color: rgba(0,0,0,0);
+  }
+
+  /* 'new' page */
+  .fluid {
+    width: 100%;
+  }
+  .short{
+    height: 200px;
+  }
+  .column{
+    flex-direction: column;
+  }
+  .wide {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .book-info{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+  .book-info-detail{
+    display: flex;
+    flex-direction: column;
+  }
+  .book-info-detail input{
+    font-family: 'maruburiR';
+    font-size: 16px;
+    padding: 10px;
+    appearance: none;
+    background: #DDC8BD;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    width: 230px;
+    height: 42px;
+  }
+  .reading-period span{
+    font-size: 42px;
+    position: relative;
+    top: 6px;
+  }

@@ -1,0 +1,19 @@
+{% include 'base.html' %} 
+
+{% load static %}
+<link rel="stylesheet" href="{%static 'css/login.css'%}">
+
+<div class="login-box">
+    <div class="login-box-title">
+        <h2>로그인</h2>
+    </div>
+    <div class="login-box-content">
+        <div class="form-box">
+            <h3>아이디</h3>
+            <input class="input" id="id" />
+            <h3>비밀번호</h3>
+            <input class="input" id="pw" type="password"/>
+            <input type="submit" class="btn normal-btn login-btn" value="" onclick="location.href='{% url "trend" %}'" ></input>
+        </div>
+    </div>
+</div>

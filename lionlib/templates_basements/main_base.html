@@ -1,0 +1,17 @@
+{% include 'base.html' %} 
+
+{% load static %}
+<link rel="stylesheet" href="{%static 'css/main/mainpage-base.css'%}">
+
+<div class="content-box">
+    <div class="content-box-title">
+        <!-- title -->
+        {% block title %}
+        {% endblock %}
+    </div>
+    <div class="content-box-content">
+        <!-- main view -->
+        {% block main %}
+        {% endblock %}
+    </div>
+</div>

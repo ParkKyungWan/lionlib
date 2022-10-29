@@ -1,0 +1,44 @@
+{% include 'base.html' %} 
+
+{% load static %}
+<link rel="stylesheet" href="{%static 'css/index.css'%}">
+
+<div class="auto-position">
+   
+    <h1 class="title" >사자의 서재</h1>
+    
+    <div class="index-box">
+        <div class="index-main-item">
+        <!-- Main area -->
+            
+            <div class="login-box">
+                <div class="login-item">
+                    <div class="mini-textbox">
+                        <h2>로그인</h2>
+                    </div>
+                    <button class="btn normal-btn login-btn" onclick="location.href= '{% url "login" %}'">
+                        <img src="{% static 'images/arrow.png' %}" style="height: 50%; margin-right: 11px;"></button>
+                </div>
+                
+                <div class="login-item">
+                    <div class="mini-textbox">
+                        <h2>회원가입</h2>
+                    </div>  
+                    <button class="btn normal-btn login-btn" onclick="location.href= '{% url "register" %}'">
+                        <img src="{% static 'images/arrow.png' %}" style="height: 50%; margin-right: 11px;"></button>   
+                </div>
+            </div>
+
+        </div>
+        <div class="index-design-flex">
+        <!-- Design area -->
+            <div class="gap" style="width: 8px;"></div>
+            <div class="index-design-item" ></div>  
+            <div class="index-design-item" ></div> 
+            <div class="index-design-item" ></div> 
+            <div class="index-design-item" ></div> 
+        </div>
+    </div>
+
+
+</div>
