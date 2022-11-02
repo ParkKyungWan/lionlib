@@ -9,27 +9,6 @@
     </div>
     <div class="login-box-content">
         <div class="form-box" style="margin-top: 70">
-            <!-- jQuery -->
-            <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
-            <!-- iamport.payment.js -->
-            <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.2.0.js"></script>
-            <script>
-                let IMP = window.IMP; 
-                IMP.init("imp23642441"); 
 
-                // IMP.certification(param, callback) 호출
-                IMP.certification({ 
-                    popup : false, 
-                    merchant_uid : 	"imp23642441"
-                }, function (rsp) { // callback
-                    if (rsp.success) {
-                    // 인증 성공 시 로직,
-                    } else {
-                    }
-                });
-                    
-            </script>
-            <input type="submit" class="btn normal-btn login-btn" style="margin-top: 0" value="" onclick="location.href='{% url "trend" %}'"></input>
-        </div>
     </div>
 </div>
