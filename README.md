@@ -26,7 +26,7 @@
   https://www.figma.com/file/TNGEwrW4vURmllRZXfgtQF/%EC%82%AC%EC%9E%90%EC%9D%98-%EC%84%9C%EC%9E%AC-prototype?node-id=0%3A1
 
 # 진행 상황
-  프론트만 진행 
+  디자인 + 로그인/로그아웃
  
 # 작동 예시
   ## /
