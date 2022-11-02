@@ -1,3 +1,28 @@
+# mysql 서버 따로 켜야 함
+  ![image](https://user-images.githubusercontent.com/48673195/199517636-de4475db-ceb1-43e2-9247-34d629af13db.png)
+
+# 유저 테이블 ( AuthUser )
+  | username | email | password |
+  | ---------| ------| ---------|
+  | CharField(150) | charField(150) | charfield(128) |
+
+# 유저 모델 ( models.py )
+  class AuthUser(models.Model):
+    password = models.CharField(max_length=128)
+    last_login = models.DateTimeField(blank=True, null=True)
+    is_superuser = models.IntegerField()
+    username = models.CharField(unique=True, max_length=150)
+    first_name = models.CharField(max_length=150)
+    last_name = models.CharField(max_length=150)
+    email = models.CharField(max_length=254)
+    is_staff = models.IntegerField()
+    is_active = models.IntegerField()
+    date_joined = models.DateTimeField()
+
+    class Meta:
+        managed = False
+        db_table = 'auth_user'
+
 # 디자인 시안
   https://www.figma.com/file/TNGEwrW4vURmllRZXfgtQF/%EC%82%AC%EC%9E%90%EC%9D%98-%EC%84%9C%EC%9E%AC-prototype?node-id=0%3A1
 
