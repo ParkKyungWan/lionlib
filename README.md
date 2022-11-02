@@ -1,5 +1,9 @@
+#디자인만 된 상태 다운받기
+  [lionlib.zip](https://github.com/ParkKyungWan/lionlib/files/9921374/lionlib.zip)
+
 # mysql 서버 따로 켜야 함
   ![image](https://user-images.githubusercontent.com/48673195/199519020-b61a29aa-7707-4571-9a42-a6886d806f7e.png)
+  
 # 유저 테이블 ( AuthUser )
   | username | email | password |
   | ---------| ------| ---------|
