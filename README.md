@@ -1,6 +1,5 @@
 # mysql 서버 따로 켜야 함
-  ![image](https://user-images.githubusercontent.com/48673195/199517636-de4475db-ceb1-43e2-9247-34d629af13db.png)
-
+  ![image](https://user-images.githubusercontent.com/48673195/199519020-b61a29aa-7707-4571-9a42-a6886d806f7e.png)
 # 유저 테이블 ( AuthUser )
   | username | email | password |
   | ---------| ------| ---------|
