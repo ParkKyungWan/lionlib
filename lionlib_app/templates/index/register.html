@@ -9,13 +9,19 @@
     </div>
     <div class="login-box-content">
         <div class="form-box" style="margin-top: 70">
-            <form method="POST">
+            <form method="post" name="register" action={% url 'user_create' %} >
+                {% csrf_token %}
                 <h3>이메일</h3>
-                <input class="input" id="email" type="email" required/>
+                <input class="input" name="email" type="email" required/>
                 <h3>비밀번호</h3>
-                <input class="input" id="pw" type="password" required/>
-                <input type="submit" class="btn normal-btn login-btn" value="" ></input>
+                <input class="input" name="password" type="password" required/>
+                <button class="btn normal-btn login-btn" value="" onclick="send()" />
             </form>
+            <script>
+                send = () => {
+                    document.getElementById("register").submit();
+                }
+            </script>
         </div>
     </div>
 </div>
