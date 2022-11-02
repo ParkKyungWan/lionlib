@@ -83,10 +83,11 @@ def user_login( request ):
         is_user_exsist = AuthUser.objects.filter( email = mail ).exists()
         if is_user_exsist:
             user = AuthUser.objects.get( email = mail )
-            if PasswordHasher().verify( user.password , pw ):
-                request.session['user'] =  user.username
-                return redirect('trend')
-            else:
+            try:
+                if PasswordHasher().verify( user.password , pw ):
+                    request.session['user'] =  user.username
+                    return redirect('trend')
+            except:
                 return render( request, 'etc/alert.html', { 'title' : "로그인 실패", 'text' : "비밀번호를 확인하세요"})
         else:
             return render( request, 'etc/alert.html', { 'title' : "로그인 실패", 'text' : "존재하지 않는 계정입니다"})
