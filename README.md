@@ -1,4 +1,4 @@
-#디자인만 된 상태 다운받기
+# 디자인만 된 상태 다운받기
   [lionlib.zip](https://github.com/ParkKyungWan/lionlib/files/9921374/lionlib.zip)
 
 # mysql 서버 따로 켜야 함
