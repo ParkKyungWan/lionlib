@@ -1,15 +1,16 @@
 # 디자인만 된 상태 다운받기
   [lionlib.zip](https://github.com/ParkKyungWan/lionlib/files/9921374/lionlib.zip)
 
-# mysql 서버 따로 켜야 함
+# mysql 서버 연동 시 
+  
   ![image](https://user-images.githubusercontent.com/48673195/199519020-b61a29aa-7707-4571-9a42-a6886d806f7e.png)
   
-# 유저 테이블 ( AuthUser )
+  ## 필수로 만들어야 하는 테이블 ( AuthUser )
   | username | email | password |
   | ---------| ------| ---------|
   | CharField(150) | charField(150) | charfield(128) |
 
-# 유저 모델 ( models.py )
+  ## models.py 
     class AuthUser(models.Model):
       password = models.CharField(max_length=128)
       last_login = models.DateTimeField(blank=True, null=True)
@@ -23,8 +24,8 @@
       date_joined = models.DateTimeField()
 
       class Meta:
-          managed = False
-          db_table = 'auth_user'
+        managed = False
+        db_table = 'auth_user'
 
 # 디자인 시안
   https://www.figma.com/file/TNGEwrW4vURmllRZXfgtQF/%EC%82%AC%EC%9E%90%EC%9D%98-%EC%84%9C%EC%9E%AC-prototype?node-id=0%3A1
