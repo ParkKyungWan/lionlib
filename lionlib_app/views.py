@@ -13,6 +13,9 @@ def login( request ):
 def register( request ):
     return render( request, 'index/register.html');
 
+def register2( request ):
+    return render( request, 'index/register2.html');
+
 
 # trend, my, new
 

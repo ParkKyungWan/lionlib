@@ -24,6 +24,7 @@ urlpatterns = [
     path('', lionlib_app.views.index, name="index"),
     path('login', lionlib_app.views.login, name="login"),
     path('register', lionlib_app.views.register, name="register"),
+    path('register2', lionlib_app.views.register2, name="register2"),
 
     path('trend', lionlib_app.views.trend, name="trend"),
     path('my', lionlib_app.views.my, name="my"),
