@@ -24,7 +24,6 @@ urlpatterns = [
     path('', lionlib_app.views.index, name="index"),
     path('login', lionlib_app.views.login, name="login"),
     path('register', lionlib_app.views.register, name="register"),
-    path('register2', lionlib_app.views.register2, name="register2"),
 
     path('trend', lionlib_app.views.trend, name="trend"),
     path('my', lionlib_app.views.my, name="my"),
@@ -32,5 +31,10 @@ urlpatterns = [
     
     path('all', lionlib_app.views.all, name="all"),
     path('show', lionlib_app.views.show, name="show"),
+
+    #로그인&회원가입 기능
+    path('user_create', lionlib_app.views.user_create, name="user_create" ),
+    path('user_login', lionlib_app.views.user_login, name="user_login" ),
+    path('logout', lionlib_app.views.logout, name="user_logout" ),
 
 ]

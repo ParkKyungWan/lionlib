@@ -9,6 +9,9 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
+import pymysql
+pymysql.install_as_MySQLdb()
+# pymysql
 
 from pathlib import Path
 
@@ -74,10 +77,14 @@ WSGI_APPLICATION = 'lionlib.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
+DATABASES ={
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'db_lion', # DB명
+        'USER': 'root', # 데이터베이스 계정
+        'PASSWORD': '1234', # 계정 비밀번호
+        'HOST': 'localhost', 
+        'PORT': '3306', 
     }
 }
 
